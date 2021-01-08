@@ -1,0 +1,64 @@
+.starter {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.starter__bigBut {
+  margin: auto;
+  max-width: max-content;
+  background: none;
+  align-items: center;
+}
+
+.starter__bigBut button {
+  background: none;
+  border-radius: 30px;
+  border: 10px solid var(--blue-neon);
+  color: var(--blue-neon);
+  cursor: pointer;
+  padding: 50px;
+  font-size: 5rem;
+  animation: idle 3s ease-in-out infinite;
+  transition: 0.5s;
+}
+
+.starter__bigBut button:focus {
+  outline: none;
+}
+
+.starter__bigBut button:hover {
+  transform: scale(1.1);
+  animation: idle 1s ease-in-out infinite;
+}
+
+.starter__bigBut button:active {
+  border-style: double;
+}
+
+.vanishBut {
+  animation: vanishButton 1s ease-in-out forwards;
+}
+
+/* Animations */
+
+@keyframes idle {
+  0% {
+    box-shadow: 0 0 30px var(--blue-neon);
+  }
+
+  50% {
+    box-shadow: 0 0 100px var(--blue-neon);
+  }
+
+  100% {
+    box-shadow: 0 0 30px var(--blue-neon);
+  }
+}
+
+@keyframes vanishButton {
+  100% {
+    transform: scale(0);
+  }
+}
