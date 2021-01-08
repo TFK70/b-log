@@ -1,2 +1,2 @@
 # B-LOG
-Extraordinary interface created with Next.js
+Extraordinary(yolo) interface created with Next.js
